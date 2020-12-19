@@ -1,0 +1,11 @@
+[user]
+  name   = Rasul Kireev
+  email  = me@rasulkireev.com
+[github]
+  user   = rasulkireev
+[alias]
+	cm = !git add -A && git commit -m
+[core]
+	editor = vim
+[pull]
+	rebase = false
