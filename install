@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
 
-echo "Installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#echo "Installing oh-my-zsh"
+#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Installing zshrc"
-ln -sfv ~/.dotfiles/.zshrc ~/.zshrc
+ln -svf ~/.dotfiles/.zshrc ~/.zshrc
+source ~/.zshrc
 
 echo "Installing vimrc"
-ln -sfv ~/.dotfiles/.vimrc ~/.vimrc
+ln -svf ~/.dotfiles/.vimrc ~/.vimrc
+source ~/.vimrc
