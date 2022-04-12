@@ -1,0 +1,236 @@
+{
+  /**
+   * Better Defaults
+   **/
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "window.nativeFullScreen": false,
+  "files.trimFinalNewlines": true,
+  "workbench.tree.indent": 24,
+  "workbench.tree.renderIndentGuides": "always",
+  // "editor.emptySelectionClipboard": false,
+  // "files.insertFinalNewline": true,
+
+  /**
+   * Silence The Noise
+   */
+  "breadcrumbs.enabled": false,
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": true,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // "editor.selectionHighlight": false,
+  // "editor.occurrencesHighlight": false,
+  // "scm.diffDecorations": "none",
+  // "editor.hover.enabled": false,
+  // "editor.matchBrackets": "never",
+
+  /**
+   * Typography
+   **/
+  "workbench.colorTheme": "Visual Studio Dark",
+  "editor.fontFamily": "MonoLisa",
+  "editor.lineHeight": 0,
+  "editor.fontSize": 13,
+  "editor.fontLigatures": "'ss02' on",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  // "editor.suggestFontSize": 15,
+  // "editor.suggestLineHeight": 28,
+
+  /**
+   * Hide Everything
+   */
+  "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1e1e1e",
+    "activityBar.background": "#1e1e1e"
+  },
+  "workbench.editor.showTabs": false,
+  "editor.renderIndentGuides": false,
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "on",
+
+  /**
+   * Find
+   **/
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+    "**/vendor/{[^l],?[^ai]}*": true,
+    // Hide everything in /public, except "index.php"
+    "**/public/{[^i],?[^n]}*": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.temp": true,
+    "**/_ide_helper.php": true,
+    "**/composer.lock": true,
+    "**/poetry.lock": true,
+    "**/package-lock.json": true,
+    "storage": true,
+    ".phpunit.result.cache": true
+  },
+
+  /**
+   * Window Settings
+   **/
+  // "window.nativeTabs": true,
+  "window.titleBarStyle": "native",
+  "customizeUI.titleBar": "inline",
+  "customizeUI.stylesheet": {
+    ".editor .title": "background: transparent !important;",
+    ".editor .title .label-container": "visibility: hidden;",
+    // Hide top-right buttons
+    ".editor .title .actions-container .action-item a": "visibility: hidden;",
+    // Show top-right "settings goto icon"
+    ".editor .title .actions-container .action-item a[title=\"Open Settings (UI)\"]": "visibility: initial;",
+    ".editor .title .actions-container .action-item a[title=\"Open Settings (JSON)\"]": "visibility: initial;",
+    // Make it the "right-most" icon.
+    ".editor .title .actions-container": "flex-direction: row-reverse;",
+    // Only show the scrollbar on hover.
+    ".editor .scrollbar .slider": "visibility: hidden",
+    ".editor .scrollbar:hover .slider": "visibility: initial",
+    // Change cursor color.
+    ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important; color: #292D3E !important"
+  },
+
+  // Python
+  "[python]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true
+  },
+  "python.languageServer": "Pylance",
+
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /**
+   * Prettier
+   **/
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+
+  /**
+   * Code
+   **/
+  // Include "-" in word selection.
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "vue-html": "html",
+    "vue": "html"
+  },
+
+  /** Spelling **/
+  /** Taken from: https://www.coderedcorp.com/blog/spell-check-vscode/ **/
+
+  // Only spell check the following file types, ignore all others.
+  "spellright.documentTypes": [
+    "markdown",
+    "restructuredtext",
+    "latex",
+    "plaintext",
+    "html"
+  ],
+
+  // Within those file types, ignore the following sections.
+  "spellright.ignoreRegExps": [
+    // ignore code blocks (surrounded by at least one backtick)
+    "/`+([\\s\\S\\w\\W]+?)`+/g",
+    // ignore code blocks (rst double colon)
+    "/::\\n\\n([\\s\\S\\w\\W]+?)(?=\\n\\S)/g",
+    // ignore code-blocks (rst double period)
+    "/\\.\\. code\\-block::[\\s\\w]*\\n\\n([\\s\\S\\w\\W]+?)(?=\\n\\S)/g",
+    // ignore string assignment (e.g. HTML tag properties)
+    "/\\w+\\s*\\=+\\s*[\"\\']+.+[\"\\']+/g"
+  ],
+
+  // Within HTML files specifically
+  "spellright.ignoreRegExpsByClass": {
+    "html": [
+      // ignore Django/Jinja template tags
+      "/\\{[\\{\\%\\#].+[\\#\\%\\}]\\}/g",
+      // ignore script tag contents
+      "/<script.*?>([\\s\\S\\w\\W]*?)</script>/g",
+      // ignore style tag contents
+      "/<style>([\\s\\S\\w\\W]*?)</style>/g",
+      // ignore actual HTML tags, but not the contents.
+      "/<[\\s\\S\\w\\W]+?>/g"
+    ]
+  },
+
+  "joplin.token": "dd17a885a394a1c18f66a23a5578cde0200f4177bca0eb7ad8cb1b60a25b402e48942740e59a8522222b918c8d202e9e871e22992d18ad3df8ec6ad6d13e8c7c",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+  "editor.tabSize": 2,
+
+  "workbench.editorAssociations": {
+    "*.sqlite3": "default",
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "svelte.enable-ts-plugin": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.formatOnSave": true,
+  "bracketPairColorizer.depreciation-notice": false,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+
+  // Plugins
+  "emojisense.languages": {
+    "markdown": true,
+    "plaintext": false,
+    "json": false,
+    "scminput": true
+  }
+}
