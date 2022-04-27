@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "## Pages to reference\n- [[TODOs]]\n- [[Projects]]\n\n## [[Top Priorities]]\n- {{pull tasks from pages above}}\n\t\n## [[Daily Habits]]\n- {{name of the habit you want to do }}\n  - [[{date:yyyy-MM-dd}]]\n  - [[{date+1d:yyyy-MM-dd}]]\n  - [[{date+2d:yyyy-MM-dd}]]\n  - [[{date+3d:yyyy-MM-dd}]]\n  - [[{date+4d:yyyy-MM-dd}]]\n  - [[{date+5d:yyyy-MM-dd}]]\n  - [[{date+6d:yyyy-MM-dd}]]",
+    "uid" : "51535D7F-1A2C-4192-ADB1-D3BB2E087774",
+    "name" : "Weekly Plan",
+    "keyword" : "wplan"
+  }
+}

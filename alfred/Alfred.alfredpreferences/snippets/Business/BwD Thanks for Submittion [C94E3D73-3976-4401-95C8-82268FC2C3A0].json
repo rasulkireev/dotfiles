@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Hey [name],\n\nThanks for submitting the project! I just added it to the site.\n\nWould you be open to doing a small interview about [your project]? I am working on a podcast right now, and have recorded a couple of episodes already. It would be awesome if I could interview you.\n\nIn the interview, I would ask you questions about you and [your project]. Questions like:\n- How long have you been learning\/using Django for?\n- What are some resources you would recommend to people?\n- Why did you decide to build [your project]?\n- What is your tech stack?\n- etc.\n\nThe interview usually takes around an hour, but of course we can make it shorter or longer, dependeing on your preference. \n\nIf you are not open to an audio interview, that's totally fine. Would you be ok with answering a few short question in the email instead? I'd love to provide people with some context for you website. You don't have to answer any questions you don't feel comfortable with.\n\nSorry, or the lengthy email. Please let me know what you think.\n\nAgain, thanks for submitting your project to my site, it means a lot.\n\nBest,\nRasul\n\nrasulkireev.com",
+    "uid" : "C94E3D73-3976-4401-95C8-82268FC2C3A0",
+    "name" : "BwD Thanks for Submittion",
+    "keyword" : "bwd_thx"
+  }
+}

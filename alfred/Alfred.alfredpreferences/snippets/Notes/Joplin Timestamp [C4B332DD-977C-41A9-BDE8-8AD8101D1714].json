@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date:HH:mm}",
+    "uid" : "C4B332DD-977C-41A9-BDE8-8AD8101D1714",
+    "name" : "Joplin Timestamp",
+    "keyword" : "jtime"
+  }
+}

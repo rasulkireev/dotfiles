@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "- [[{date:yyyy-MM-dd}]]\n- [[{date+1d:yyyy-MM-dd}]]\n- [[{date+2d:yyyy-MM-dd}]]\n- [[{date+3d:yyyy-MM-dd}]]\n- [[{date+4d:yyyy-MM-dd}]]\n- [[{date+5d:yyyy-MM-dd}]]\n- [[{date+6d:yyyy-MM-dd}]]",
+    "uid" : "0DE46D71-97CB-455A-9F9E-F1593BB765BF",
+    "name" : "Links for the following week",
+    "keyword" : "wlinks"
+  }
+}
