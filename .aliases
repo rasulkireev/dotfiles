@@ -1,0 +1,7 @@
+# Aliases
+alias joplin-templates="cd ~/.config/joplin-desktop/templates"
+
+alias vimrc="vim ~/ps/live_projects/dotfiles/.vimrc"
+alias zshrc="vim ~/ps/live_projects/dotfiles/.zshrc"
+
+# add dir with code to startup (zshrc)

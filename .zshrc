@@ -101,17 +101,33 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
+alias joplin-templates="cd ~/.config/joplin-desktop/templates"
+alias djo="vim /Users/u1082926/Dropbox/journal/$(date +'%Y-%m-%d').md"
+alias fuck_zscaler="sudo ~/.local/bin/fuck_zscaler.sh"
+alias zscaler_on="sudo ~/.local/bin/zscaler_on.sh"
+
+# Django aliases
+alias drs="python manage.py runserver"
+alias dmm="python manage.py makemigrations"
+alias dm="python manage.py migrate"
+alias dsa="python manage.py startapp"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
 # Poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # Created by `userpath` on 2020-09-15 22:55:15
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:/Users/u1082926/.local/bin"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export code_location="$HOME/code"
