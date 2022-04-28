@@ -101,10 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
-alias joplin-templates="cd ~/.config/joplin-desktop/templates"
-alias djo="vim /Users/u1082926/Dropbox/journal/$(date +'%Y-%m-%d').md"
-alias fuck_zscaler="sudo ~/.local/bin/fuck_zscaler.sh"
-alias zscaler_on="sudo ~/.local/bin/zscaler_on.sh"
 
 # Django aliases
 alias drs="python manage.py runserver"
@@ -130,4 +126,4 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-export code_location="$HOME/code"
+export CODE="$HOME/code"
