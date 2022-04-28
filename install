@@ -4,9 +4,13 @@
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Installing zshrc"
-ln -svf ./.zshrc ~/.zshrc
+ln -svf ~/code/dotfiles/.zshrc  ~/.zshrc
 source ~/.zshrc
 
 echo "Installing vimrc"
-ln -svf ./.vimrc ~/.vimrc
+ln -svf ~/code/dotfiles/.vimrc  ~/.vimrc
 source ~/.vimrc
+
+echo "Configuring git"
+ln -svf ~/code/dotfiles/.gitconfig ~/.gitconfig
+source ~/.gitconfig
