@@ -3,14 +3,18 @@
 #echo "Installing oh-my-zsh"
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo "Installing aliases"
+ln -svf $HOME/code/dotfiles/.aliases  ~/.aliases
+source $HOME/.aliases
+
 echo "Installing zshrc"
-ln -svf ~/code/dotfiles/.zshrc  ~/.zshrc
-source ~/.zshrc
+ln -svf $HOME/code/dotfiles/.zshrc  ~/.zshrc
+source $HOME/.zshrc
 
 echo "Installing vimrc"
-ln -svf ~/code/dotfiles/.vimrc  ~/.vimrc
-source ~/.vimrc
+ln -svf $HOME/code/dotfiles/.vimrc  ~/.vimrc
+source $HOME/.vimrc
 
 echo "Configuring git"
-ln -svf ~/code/dotfiles/.gitconfig ~/.gitconfig
-source ~/.gitconfig
+ln -svf $HOME/code/dotfiles/.gitconfig ~/.gitconfig
+source $HOME/.gitconfig

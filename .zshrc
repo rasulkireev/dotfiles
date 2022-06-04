@@ -99,15 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vimrc="vim ~/.vimrc"
-alias zshrc="vim ~/.zshrc"
 
-# Django aliases
-alias drs="python manage.py runserver"
-alias dmm="python manage.py makemigrations"
-alias dm="python manage.py migrate"
-alias dsa="python manage.py startapp"
-
+if [ -f $HOME/.aliases ]; then
+    . $HOME/.aliases
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
