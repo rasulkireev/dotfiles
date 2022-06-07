@@ -4,5 +4,12 @@
 <dict>
 	<key>applicationUseKeywords</key>
 	<true/>
+	<key>fallbacks</key>
+	<array>
+		<string>features.websearch.google.fallback</string>
+		<string>features.websearch.amazon.fallback</string>
+		<string>features.websearch.wiki.fallback</string>
+		<string>user.workflow.3483556F-09BD-49D6-AE79-936477529513.1BD03BB0-06B9-47F5-9346-7A829C38B248</string>
+	</array>
 </dict>
 </plist>
