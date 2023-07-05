@@ -122,3 +122,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export CODE="$HOME/code"
+# >>>> Vagrant command completion (start)
+fpath=(/opt/vagrant/embedded/gems/2.2.19/gems/vagrant-2.2.19/contrib/zsh $fpath)
+compinit
+# <<<<  Vagrant command completion (end)
