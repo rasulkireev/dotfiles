@@ -1,11 +1,6 @@
 # Django aliases
 alias dm="poetry run python manage.py"
-# alias drs="poetry run python manage.py runserver"
-# alias dmm="python manage.py makemigrations"
-# alias dm="python manage.py migrate"
-# alias dsa="python manage.py startapp"
 
-# Old Unused
-alias joplin-templates="cd ~/.config/joplin-desktop/templates"
-alias vimrc="vim ~/code/dotfiles/.vimrc"
-alias zshrc="vim ~/code/dotfiles/.zshrc"
+# Remaps
+alias npm="pnpm"
+alias vim="nvim"

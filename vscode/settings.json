@@ -1,22 +1,23 @@
 {
   /**
    * Better Defaults
-   **/
-  "editor.copyWithSyntaxHighlighting": false,
+  **/
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.editor.enablePreview": false,
-  "window.newWindowDimensions": "inherit",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "files.trimTrailingWhitespace": true,
   "diffEditor.renderSideBySide": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
+  "editor.lineNumbers": "on",
   "editor.detectIndentation": false,
-  "window.nativeFullScreen": false,
+  // "editor.emptySelectionClipboard": false,
+  "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+  // "files.insertFinalNewline": true,
+  "window.newWindowDimensions": "inherit",
+  "window.nativeFullScreen": false,
+  "workbench.editor.enablePreview": false,
   "workbench.tree.indent": 24,
   "workbench.tree.renderIndentGuides": "always",
-  // "editor.emptySelectionClipboard": false,
-  // "files.insertFinalNewline": true,
 
   /**
    * Silence The Noise
@@ -78,7 +79,6 @@
   "workbench.editor.showTabs": false,
   "editor.renderIndentGuides": false,
   "editor.minimap.enabled": false,
-  "editor.lineNumbers": "on",
 
   /**
    * Find
@@ -90,12 +90,16 @@
     // Hide everything in /public, except "index.php"
     "**/public/{[^i],?[^n]}*": true,
     "**/node_modules": true,
+    "**/build": true,
     "**/dist": true,
+    "**/.angular": true,
     "**/.temp": true,
     "**/_ide_helper.php": true,
     "**/composer.lock": true,
     "**/poetry.lock": true,
     "**/package-lock.json": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
     "storage": true,
     ".phpunit.result.cache": true
   },
@@ -104,7 +108,7 @@
    * Window Settings
    **/
   // "window.nativeTabs": true,
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "customizeUI.titleBar": "inline",
   "customizeUI.stylesheet": {
     ".editor .title": "background: transparent !important;",
@@ -117,8 +121,8 @@
     // Make it the "right-most" icon.
     ".editor .title .actions-container": "flex-direction: row-reverse;",
     // Only show the scrollbar on hover.
-    ".editor .scrollbar .slider": "visibility: hidden",
-    ".editor .scrollbar:hover .slider": "visibility: initial",
+    // ".editor .scrollbar .slider": "visibility: hidden",
+    // ".editor .scrollbar:hover .slider": "visibility: initial",
     // Change cursor color.
     ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important; color: #292D3E !important"
   },
@@ -135,9 +139,21 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  // HTML
+  "html.suggest.html5": true,
+  "editor.linkedEditing": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  // TailwindCSS
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+
   /**
-   * Prettier
-   **/
+  * Prettier
+  **/
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -146,11 +162,12 @@
   "prettier.useEditorConfig": false,
 
   /**
-   * Code
-   **/
+  * Code
+  **/
   // Include "-" in word selection.
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "emmet.includeLanguages": {
+    "django-html": "html",
     "blade": "html",
     "vue-html": "html",
     "vue": "html"
@@ -194,9 +211,6 @@
     ]
   },
 
-  "joplin.token": "dd17a885a394a1c18f66a23a5578cde0200f4177bca0eb7ad8cb1b60a25b402e48942740e59a8522222b918c8d202e9e871e22992d18ad3df8ec6ad6d13e8c7c",
-  "kite.showWelcomeNotificationOnStartup": false,
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
   "editor.tabSize": 2,
 
   "workbench.editorAssociations": {
@@ -209,11 +223,6 @@
   "go.toolsManagement.autoUpdate": true,
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "svelte.enable-ts-plugin": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.exclude": {
@@ -232,5 +241,19 @@
     "plaintext": false,
     "json": false,
     "scminput": true
-  }
+  },
+
+  // Newer
+  "editor.guides.indentation": false,
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1,
+  "files.associations": {
+    "*.html": "html",
+    "*.css": "tailwindcss"
+  },
+  "update.showReleaseNotes": false
+
 }

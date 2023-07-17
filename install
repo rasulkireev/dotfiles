@@ -18,3 +18,7 @@ source $HOME/.vimrc
 echo "Configuring git"
 ln -svf $PWD/.gitconfig $HOME/.gitconfig
 source $HOME/.gitconfig
+
+echo "Configuring VS Code"
+ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"
+ln -svf $PWD/vscode/keybindings.json  "$HOME/Library/Application Support/Code/User/keybindings.json"
