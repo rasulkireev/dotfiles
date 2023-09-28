@@ -94,10 +94,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export CODE="$HOME/code"
+
 # >>>> Vagrant command completion (start)
 fpath=(/opt/vagrant/embedded/gems/2.2.19/gems/vagrant-2.2.19/contrib/zsh $fpath)
 compinit
 # <<<<  Vagrant command completion (end)
 
 # Redis Stack
-export PATH=/usr/local/Caskroom/redis-stack-server/6.2.6-v7/bin:$PATH
+export PATH=/usr/local/Caskroom/redis-stack-server/7.2.0-v0/bin:$PATH

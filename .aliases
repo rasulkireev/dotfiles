@@ -2,5 +2,5 @@
 alias dm="poetry run python manage.py"
 
 # Remaps
-alias npm="pnpm"
+# alias npm="pnpm"
 alias vim="nvim"
