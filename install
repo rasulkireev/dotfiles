@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 #echo "Installing oh-my-zsh"
-#sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # For Docker. See https://docs.docker.com/desktop/install/mac-install/
-# softwareupdate --install-rosetta
+softwareupdate --install-rosetta
 
 echo "Installing aliases"
 ln -svf $PWD/.aliases  $HOME/.aliases
@@ -28,3 +28,5 @@ source $HOME/.mackup.cfg
 echo "Configuring VS Code"
 ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"
 ln -svf $PWD/vscode/keybindings.json  "$HOME/Library/Application Support/Code/User/keybindings.json"
+
+mackup restore
