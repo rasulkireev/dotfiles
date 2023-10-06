@@ -1,0 +1,1 @@
+INSERT INTO "public"."uploads" ("id", "upload_uuid", "state", "error", "created_at", "modified_at", "file_source_uri", "user_id") VALUES (10, NULL, 'success', NULL, '2023-02-01T21:35:32.512275', '2023-02-01T21:38:13.872081', 'file://109.gz', 1);

@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM jobs_post WHERE email IS NOT NULL AND email <> '';

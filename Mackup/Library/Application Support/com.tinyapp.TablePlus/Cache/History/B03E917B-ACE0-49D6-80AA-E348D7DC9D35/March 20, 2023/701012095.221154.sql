@@ -1,0 +1,2 @@
+UPDATE "public"."profiles_profile" SET "state" = '' WHERE "id" = 'a1dc8175-83fc-4332-b970-7d28053cf138';
+UPDATE "public"."profiles_profile" SET "state" = '' WHERE "id" = '0c98aa4a-5238-439c-8315-a83ed916071c';

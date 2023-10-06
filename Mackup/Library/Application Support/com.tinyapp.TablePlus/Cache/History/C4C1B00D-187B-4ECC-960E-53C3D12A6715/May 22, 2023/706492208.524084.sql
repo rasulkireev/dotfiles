@@ -1,0 +1,1 @@
+UPDATE "public"."jobs_email" SET "email_is_generic" = 't' WHERE "id" = '17e07cfb-7e82-4e8a-bd6b-b6b48bc01fdd';

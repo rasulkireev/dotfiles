@@ -1,0 +1,4 @@
+SELECT city, COUNT(city) as count
+FROM profiles_profile
+GROUP BY city
+ORDER BY count DESC

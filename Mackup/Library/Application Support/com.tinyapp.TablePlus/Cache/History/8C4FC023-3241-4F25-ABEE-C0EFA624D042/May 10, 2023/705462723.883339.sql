@@ -1,0 +1,1 @@
+DROP TABLE "public"."jobs_post_technologies_used" CASCADE;

@@ -1,0 +1,1 @@
+DELETE FROM "public"."blog_blogpage" WHERE "page_ptr_id" = 5;

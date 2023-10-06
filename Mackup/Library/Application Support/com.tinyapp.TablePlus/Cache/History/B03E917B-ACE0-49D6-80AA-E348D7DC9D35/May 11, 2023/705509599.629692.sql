@@ -1,0 +1,1 @@
+DELETE FROM "public"."profiles_profile" WHERE "id" = 'a3db18d4-0959-4c36-9e64-04b5c7670114';

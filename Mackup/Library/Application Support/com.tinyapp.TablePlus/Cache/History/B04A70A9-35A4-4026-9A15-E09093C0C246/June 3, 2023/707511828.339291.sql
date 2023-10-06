@@ -1,0 +1,1 @@
+CREATE TABLE "airbyte_test"."manual_test" ("id" int,"name" char NOT NULL DEFAULT '',"created" timestamp NOT NULL DEFAULT NOW());

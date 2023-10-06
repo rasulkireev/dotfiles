@@ -1,0 +1,1 @@
+UPDATE "public"."sales_email" SET "failed" = 't' WHERE "basemodel_ptr_id" = 'a1beec05-959f-4833-ba2c-ac649b4ea781';

@@ -1,0 +1,1 @@
+COUNT(*) as count

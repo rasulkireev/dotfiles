@@ -1,0 +1,1 @@
+DELETE FROM "public"."djstripe_customer" WHERE "djstripe_id" = 3 OR "djstripe_id" = 4 OR "djstripe_id" = 5;

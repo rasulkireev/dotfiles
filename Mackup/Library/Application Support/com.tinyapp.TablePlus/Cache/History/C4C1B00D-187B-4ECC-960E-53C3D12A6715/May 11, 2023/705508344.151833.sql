@@ -1,0 +1,1 @@
+DELETE FROM "public"."jobs_company" WHERE "id" = 'c86c1ff8-f349-474b-978b-fcb5843cb638';

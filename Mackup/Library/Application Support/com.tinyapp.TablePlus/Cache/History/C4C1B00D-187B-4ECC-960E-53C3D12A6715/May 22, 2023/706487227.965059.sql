@@ -1,0 +1,1 @@
+UPDATE "public"."jobs_email" SET "name" = 'Marius Schatke' WHERE "id" = 'c0badc27-9c6a-49a7-922e-2d7a9124e664';

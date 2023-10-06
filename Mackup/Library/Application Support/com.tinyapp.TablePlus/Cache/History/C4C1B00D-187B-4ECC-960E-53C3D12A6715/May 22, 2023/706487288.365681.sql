@@ -1,0 +1,2 @@
+UPDATE "public"."jobs_email" SET "is_approved" = 'f' WHERE "id" = '4ec8e47f-8bfd-4881-96b8-a61473cd88b3';
+UPDATE "public"."jobs_email" SET "is_approved" = 'f' WHERE "id" = '39289678-5b49-47d0-a514-f02a0d47efd6';

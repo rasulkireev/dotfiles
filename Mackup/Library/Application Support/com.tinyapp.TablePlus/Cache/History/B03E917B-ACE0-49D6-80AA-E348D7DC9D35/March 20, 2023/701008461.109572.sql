@@ -1,0 +1,2 @@
+UPDATE "public"."profiles_profile" SET "level" = 'Junior' WHERE "id" = '98649379-a62a-4185-bd8c-2851151b86bc';
+UPDATE "public"."profiles_profile" SET "level" = 'Mid-level' WHERE "id" = 'ea1b9bd4-bf40-49f4-9162-8d7deba18b55';

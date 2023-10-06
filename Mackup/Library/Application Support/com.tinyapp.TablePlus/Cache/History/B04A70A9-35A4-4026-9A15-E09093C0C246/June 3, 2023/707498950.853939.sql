@@ -1,0 +1,2 @@
+-- CREATE DATABASE IF NOT EXISTS helloworld
+DROP TABLE IF EXISTS helloworld;

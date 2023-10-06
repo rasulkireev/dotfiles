@@ -1,0 +1,1 @@
+ALTER TABLE "public"."profiles_profile_technologies_used" ALTER COLUMN "id" SET DATA TYPE uuid;

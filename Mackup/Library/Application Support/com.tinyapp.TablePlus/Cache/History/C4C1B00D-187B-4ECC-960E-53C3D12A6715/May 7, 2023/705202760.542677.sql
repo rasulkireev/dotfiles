@@ -1,0 +1,1 @@
+DELETE FROM "public"."jobs_title" WHERE "id" = '565d5f9d-88d8-433e-ac02-bd7fca42342a' OR "id" = '03929b1d-f308-4770-a7e8-ab5be32b18a7' OR "id" = '582ddaff-46e3-4082-b20e-7f90b0b7821f';

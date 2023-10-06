@@ -1,0 +1,1 @@
+UPDATE "public"."profiles_profile" SET "description" = '', "level" = '' WHERE "id" = '4b82ecf2-ab60-4740-836c-43929cf66404';

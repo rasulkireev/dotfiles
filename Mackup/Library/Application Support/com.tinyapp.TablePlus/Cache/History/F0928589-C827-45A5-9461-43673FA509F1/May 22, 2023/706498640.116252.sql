@@ -1,0 +1,13 @@
+DROP TABLE "public"."projects_project_technologies";
+DROP TABLE "public"."projects_technology";
+DROP TABLE "public"."podcast_episode_maker";
+DROP TABLE "public"."podcast_episode_project";
+DROP TABLE "public"."makers_maker";
+DROP TABLE "public"."jobs_company";
+DROP TABLE "public"."podcast_episode";
+DROP TABLE "public"."jobs_job";
+DROP TABLE "public"."newsletter_emails";
+DROP TABLE "public"."pages_cisterciandatenftrequest";
+DROP TABLE "public"."projects_like";
+DROP TABLE "public"."projects_comment";
+DROP TABLE "public"."projects_project";

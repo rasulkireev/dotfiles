@@ -1,0 +1,1 @@
+DELETE FROM "public"."sales_email" WHERE "basemodel_ptr_id" = 'ddea7b2c-cd20-4f41-b6c5-628cedfadfeb';

@@ -3,6 +3,9 @@
 #echo "Installing oh-my-zsh"
 #sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# For Docker. See https://docs.docker.com/desktop/install/mac-install/
+# softwareupdate --install-rosetta
+
 echo "Installing aliases"
 ln -svf $PWD/.aliases  $HOME/.aliases
 source $HOME/.aliases
@@ -11,13 +14,16 @@ echo "Installing zshrc"
 ln -svf $PWD/.zshrc  $HOME/.zshrc
 source $HOME/.zshrc
 
-echo "Installing vimrc"
-ln -svf $PWD/.vimrc  $HOME/.vimrc
-source $HOME/.vimrc
+echo "Installing NeoVim"
+cp -rs $PWD/.config/nvim  $HOME/.config/nvim/
 
 echo "Configuring git"
 ln -svf $PWD/.gitconfig $HOME/.gitconfig
 source $HOME/.gitconfig
+
+echo "Configuring Mackup"
+ln -svf $PWD/.mackup.cfg $HOME/.mackup.cfg
+source $HOME/.mackup.cfg
 
 echo "Configuring VS Code"
 ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"

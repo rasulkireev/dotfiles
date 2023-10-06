@@ -1,0 +1,1 @@
+UPDATE "public"."tables" SET "upload_id" = 10 WHERE "id" = 10;

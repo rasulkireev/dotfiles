@@ -1,0 +1,1 @@
+DELETE FROM "public"."jobs_post" WHERE "id" = '592ca1df-aaa0-4997-b562-b70f59d910fe';

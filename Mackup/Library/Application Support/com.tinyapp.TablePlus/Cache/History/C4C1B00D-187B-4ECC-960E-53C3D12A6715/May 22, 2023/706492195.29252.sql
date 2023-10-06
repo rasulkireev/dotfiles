@@ -1,0 +1,2 @@
+UPDATE "public"."jobs_email" SET "email_is_generic" = 't' WHERE "id" = '956b5889-5169-4040-ba9d-b2c6ec753cbd';
+UPDATE "public"."jobs_email" SET "is_approved" = 'f' WHERE "id" = '2e0e022e-20e9-443c-9c86-d4c29362c1b7';

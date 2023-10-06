@@ -1,0 +1,1 @@
+-- DELETE FROM profiles_profile_technologies_used;
