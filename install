@@ -1,10 +1,16 @@
 #!/usr/bin/env sh
 
-#echo "Installing oh-my-zsh"
+echo "Make sure Homebrew is Installed"
+echo "If not, install with"
+echo '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+brew --version
+
+brew bundle install
+
+echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# For Docker. See https://docs.docker.com/desktop/install/mac-install/
-softwareupdate --install-rosetta
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 echo "Installing aliases"
 ln -svf $PWD/.aliases  $HOME/.aliases
@@ -21,12 +27,11 @@ echo "Configuring git"
 ln -svf $PWD/.gitconfig $HOME/.gitconfig
 source $HOME/.gitconfig
 
-echo "Configuring Mackup"
-ln -svf $PWD/.mackup.cfg $HOME/.mackup.cfg
-source $HOME/.mackup.cfg
-
 echo "Configuring VS Code"
 ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"
 ln -svf $PWD/vscode/keybindings.json  "$HOME/Library/Application Support/Code/User/keybindings.json"
 
+echo "Configuring Mackup"
+ln -svf $PWD/.mackup.cfg $HOME/.mackup.cfg
+source $HOME/.mackup.cfg
 mackup restore
