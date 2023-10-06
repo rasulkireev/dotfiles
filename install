@@ -35,3 +35,6 @@ echo "Configuring Mackup"
 ln -svf $PWD/.mackup.cfg $HOME/.mackup.cfg
 source $HOME/.mackup.cfg
 mackup restore
+
+echo "Run MacOS settings"
+./macos-settings.sh
