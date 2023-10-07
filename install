@@ -14,26 +14,22 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 echo "Installing aliases"
 ln -svf $PWD/.aliases  $HOME/.aliases
-source $HOME/.aliases
 
 echo "Installing zshrc"
 ln -svf $PWD/.zshrc  $HOME/.zshrc
-source $HOME/.zshrc
 
 echo "Installing NeoVim"
 cp -rs $PWD/.config/nvim  $HOME/.config/nvim/
 
 echo "Configuring git"
 ln -svf $PWD/.gitconfig $HOME/.gitconfig
-source $HOME/.gitconfig
 
 echo "Configuring VS Code"
 ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"
 ln -svf $PWD/vscode/keybindings.json  "$HOME/Library/Application Support/Code/User/keybindings.json"
 
 echo "Configuring Mackup"
-ln -svf $PWD/.mackup.cfg $HOME/.mackup.cfg
-source $HOME/.mackup.cfg
+ln -svf $PWD/Mackup/.mackup.cfg $HOME/.mackup.cfg
 mackup restore
 
 echo "Run MacOS settings"
