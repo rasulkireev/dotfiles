@@ -1,1 +1,0 @@
-DELETE FROM "public"."jobs_post" WHERE "id" = '71a88904-a350-4d7a-bc08-300475533b98';

@@ -1,1 +1,0 @@
-UPDATE "public"."profiles_profile" SET "years_of_experience" = '11' WHERE "id" = '7afacb12-dcf4-467b-b738-22f01aefc845';

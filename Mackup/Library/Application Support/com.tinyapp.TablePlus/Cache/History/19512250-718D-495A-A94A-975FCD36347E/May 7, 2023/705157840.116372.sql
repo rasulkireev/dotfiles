@@ -1,1 +1,0 @@
-DELETE FROM "public"."profiles_technology" WHERE "id" = '48a1f21c-2e0e-43f3-adaf-7516b1d48fcf' OR "id" = 'b9121bb1-6a14-4dd9-838d-6c72cd3d997c' OR "id" = '25293b60-b67b-44a4-918f-2b63ee589a23' OR "id" = '995790b3-151a-4451-bdf7-8694047b271b' OR "id" = 'b3e68119-d990-476f-88c5-d2b737ca818a';

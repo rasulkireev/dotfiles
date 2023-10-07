@@ -1,1 +1,0 @@
-ALTER TABLE profiles_profile_technologies_used ADD COLUMN uuid UUID DEFAULT gen_random_uuid() PRIMARY KEY;

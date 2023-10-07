@@ -1,1 +1,0 @@
-INSERT INTO "public"."tables" ("id", "upload_id", "is_archived", "state", "error", "modified_at", "created_at") VALUES (10, 10, 'f', 'success', NULL, '2023-02-01T21:38:13.872081', '2023-02-01T21:35:32.512275');

@@ -1,1 +1,0 @@
-DELETE FROM "public"."profiles_profile" WHERE "id" = '61ea6f69-a07b-4e11-8814-25fd27d57423';

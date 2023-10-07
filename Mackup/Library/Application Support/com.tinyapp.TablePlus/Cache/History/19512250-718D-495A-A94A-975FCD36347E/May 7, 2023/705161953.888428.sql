@@ -1,1 +1,0 @@
-ALTER TABLE "public"."profiles_profile_technologies_used" RENAME COLUMN "uuid" TO "id";

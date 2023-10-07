@@ -1,1 +1,0 @@
-UPDATE "public"."ingestions" SET "modified_at" = '2023-02-01T21:38:13.872081', "table_id" = 10 WHERE "id" = 10;

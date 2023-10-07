@@ -1,1 +1,0 @@
-DELETE FROM jobs_email;

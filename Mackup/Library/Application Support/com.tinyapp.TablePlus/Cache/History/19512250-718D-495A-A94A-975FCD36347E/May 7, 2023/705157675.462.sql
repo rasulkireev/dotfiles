@@ -1,1 +1,0 @@
-DELETE FROM "public"."profiles_technology" WHERE "id" = '25bd37e4-f28c-4177-8ae7-0a4c1c814bb7';

@@ -1,1 +1,0 @@
-DELETE FROM "public"."django_migrations" WHERE "id" = 40 OR "id" = 41 OR "id" = 42 OR "id" = 43 OR "id" = 44 OR "id" = 45 OR "id" = 46 OR "id" = 47 OR "id" = 48;

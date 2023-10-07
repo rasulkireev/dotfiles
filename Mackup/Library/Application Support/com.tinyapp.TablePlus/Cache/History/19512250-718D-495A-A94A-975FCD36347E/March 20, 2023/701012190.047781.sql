@@ -1,2 +1,0 @@
-UPDATE "public"."profiles_profile" SET "city" = '' WHERE "id" = 'e02735ed-2b16-4aab-bfdc-44ab8dd355a1';
-UPDATE "public"."profiles_profile" SET "city" = '' WHERE "id" = '29b9466d-c68a-4cf0-bd0d-241cb41c052b';

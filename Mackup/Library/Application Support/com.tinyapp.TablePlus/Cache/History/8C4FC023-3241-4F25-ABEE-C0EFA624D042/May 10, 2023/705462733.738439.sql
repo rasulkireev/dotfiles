@@ -1,1 +1,0 @@
-DROP TABLE "public"."jobs_posttitle" CASCADE;
