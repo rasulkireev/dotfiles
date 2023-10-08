@@ -40,7 +40,16 @@
   // },
   {
     "key": "cmd+k cmd+c",
-    "command": "workbench.view.extension.vscode-chatgpt-view-container"
+    "command": "workbench.view.extension.continue"
+  },
+  {
+    "key": "cmd+k cmd+c",
+    "command": "continue.focusContinueInput"
+  },
+  {
+    "key": "cmd+k cmd+m",
+    "command": "continue.focusContinueInput",
+    "when": "editorFocus && editorHasSelection"
   },
   {
     "key": "cmd+k cmd+k",

@@ -24,6 +24,8 @@ cp -rs $PWD/.config/nvim  $HOME/.config/nvim/
 echo "Configuring git"
 ln -svf $PWD/.gitconfig $HOME/.gitconfig
 
+ln -svf $PWD/.continue/config.py $HOME/.continue/config.py
+
 echo "Configuring VS Code"
 ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"
 ln -svf $PWD/vscode/keybindings.json  "$HOME/Library/Application Support/Code/User/keybindings.json"

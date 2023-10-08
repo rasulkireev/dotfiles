@@ -28,3 +28,5 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 ############ Security ############
 sudo spctl --master-disable
 sudo scutil --set ComputerName "mbp"
+
+############ Trackpad ############

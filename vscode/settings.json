@@ -100,7 +100,8 @@
     "**/__pycache__": true,
     "storage": true,
     ".phpunit.result.cache": true,
-    "**/.vercel": true
+    "**/.vercel": true,
+    "alfred/": true
   },
 
   /**
