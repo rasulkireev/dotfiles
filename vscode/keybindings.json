@@ -1,7 +1,17 @@
 [
   /**
-   * Panels
+   * Side Panels
    **/
+  {
+    "key": "cmd+down",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+up",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
   {
     "key": "cmd+k cmd+e",
     "command": "workbench.view.explorer"
@@ -27,18 +37,6 @@
     "command": "workbench.view.testing.focus"
   },
   {
-    "key": "cmd+e",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
-    "key": "cmd+t",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  // {
-  //     "key": "cmd+k cmd+j",
-  //     "command": "workbench.view.extension.joplin-note"
-  // },
-  {
     "key": "cmd+k cmd+c",
     "command": "workbench.view.extension.continue"
   },
@@ -55,11 +53,23 @@
     "key": "cmd+k cmd+k",
     "command": "workbench.view.extension.koloSidebarContainer"
   },
-  {
-    "key": "cmd+k cmd+p",
-    "command": "workbench.view.extension.package-explorer"
-  },
 
+  /**
+   * Bottom Panels
+  **/
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "workbench.panel.repl.view.active"
+  }
 
   /**
    * Toggle Font Size
@@ -165,16 +175,6 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+=",
-    "command": "workbench.action.increaseViewSize",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+-",
-    "command": "workbench.action.decreaseViewSize",
     "when": "editorFocus"
   },
 

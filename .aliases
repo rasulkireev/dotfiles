@@ -4,3 +4,6 @@ alias dm="poetry run python manage.py"
 # Remaps
 # alias npm="pnpm"
 alias vim="nvim"
+
+# from Pyenv docs
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'

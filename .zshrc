@@ -44,6 +44,8 @@ plugins=(
   git
 )
 
+export DISABLE_UPDATE_PROMPT=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -80,12 +82,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Poetry
-export PATH="$HOME/.poetry/bin:$PATH"
-
-# Created by `userpath` on 2020-09-15 22:55:15
-export PATH="$PATH:/Users/u1082926/.local/bin"
-
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -102,3 +98,27 @@ compinit
 
 # Redis Stack
 export PATH=/usr/local/Caskroom/redis-stack-server/7.2.0-v0/bin:$PATH
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
+# Bin dirs
+export PATH="${HOME}/.local/bin:$PATH"
+
+# postgresql@15 from homebrew
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@15/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@15/lib/pkgconfig"
+export PG_CONFIG=/opt/homebrew/opt/postgresql@15/bin/pg_config
+
+# pnpm
+export PNPM_HOME="/Users/rasul/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Android Studio
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH

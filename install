@@ -17,6 +17,7 @@ ln -svf $PWD/.aliases  $HOME/.aliases
 
 echo "Installing zshrc"
 ln -svf $PWD/.zshrc  $HOME/.zshrc
+ln -svf $PWD/.zprofile  $HOME/.zprofile
 
 echo "Installing NeoVim"
 cp -rs $PWD/.config/nvim  $HOME/.config/nvim/
@@ -30,9 +31,15 @@ echo "Configuring VS Code"
 ln -svf $PWD/vscode/settings.json  "$HOME/Library/Application Support/Code/User/settings.json"
 ln -svf $PWD/vscode/keybindings.json  "$HOME/Library/Application Support/Code/User/keybindings.json"
 
-echo "Configuring Mackup"
-ln -svf $PWD/Mackup/.mackup.cfg $HOME/.mackup.cfg
-mackup restore
+echo "Installing Karabiner Keybindings"
+ln -svf $PWD/.config/karabiner.edn  $HOME/.config/karabiner.edn
+
+echo "Installing Wakatime Config"
+ln -svf $PWD/.wakatime.cfg  $HOME/.wakatime.cfg
+
+# echo "Configuring Mackup"
+# ln -svf $PWD/Mackup/.mackup.cfg $HOME/.mackup.cfg
+# mackup restore
 
 echo "Run MacOS settings"
 ./macos-settings.sh
