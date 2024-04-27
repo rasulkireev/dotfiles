@@ -40,8 +40,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 plugins=(
   git
+  zsh-syntax-highlighting
+  fzf
 )
 
 export DISABLE_UPDATE_PROMPT=true
@@ -122,3 +125,29 @@ esac
 # Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
+
+# https://starship.rs/guide/
+eval "$(starship init zsh)"
+
+
+# https://read.highgrowthengineer.com/p/how-i-setup-my-terminal-for-max-productivity
+HISTFILE="$HOME/.zsh_history"
+# Display timestamps for each command
+HIST_STAMPS="%T %d.%m.%y"
+
+HISTSIZE=10000000
+SAVEHIST=10000000
+
+# Ignore these commands in history
+HISTORY_IGNORE="(ls|pwd|cd)*"
+
+# Write the history file in the ':start:elapsed;command' format.
+setopt EXTENDED_HISTORY
+
+# Do not record an event starting with a space.
+setopt HIST_IGNORE_SPACE
+
+# Don't store history commands
+setopt HIST_NO_STORE
+
+export BAT_THEME="base16"

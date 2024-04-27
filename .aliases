@@ -7,3 +7,25 @@ alias vim="nvim"
 
 # from Pyenv docs
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# https://read.highgrowthengineer.com/p/how-i-setup-my-terminal-for-max-productivity
+# Open up zshrc file to edit it
+alias addalias='code ~/.zshrc'
+
+# Reload zshrc file to apply changes.
+# Allows you to not need to restart terminal for changes to .zshrc to be applied
+alias reload='source ~/.zshrc'
+
+alias gs='git status'
+
+alias ohmyzsh="cd ~/.oh-my-zsh"
+alias starshipconfig="code ~/.config/starship.toml"
+
+# navigate to global ssh directory
+alias sshhome="cd ~/.ssh"
+
+# edit global ssh configuration
+alias sshconfig="code ~/.ssh/config"
+
+# edit global git configuration
+alias gitconfig="code ~/.gitconfig"

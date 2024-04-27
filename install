@@ -37,6 +37,9 @@ ln -svf $PWD/.config/karabiner.edn  $HOME/.config/karabiner.edn
 echo "Installing Wakatime Config"
 ln -svf $PWD/.wakatime.cfg  $HOME/.wakatime.cfg
 
+echo "Installing Starship Config"
+ln -svf $PWD/.config/starship.toml  $HOME/.config/starship.toml
+
 # echo "Configuring Mackup"
 # ln -svf $PWD/Mackup/.mackup.cfg $HOME/.mackup.cfg
 # mackup restore
