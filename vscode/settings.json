@@ -101,7 +101,7 @@
     "**/.next/": true,
     "**/extensions": true,
     "**/bundles": true,
-    "**/static": true,
+    "**/static": true
   },
 
   /**
@@ -124,14 +124,13 @@
     ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important; color: #292D3E !important"
   },
 
+
   // Code Specific Settings
   "[python]": {
     "editor.formatOnPaste": false,
     "editor.formatOnSave": false
   },
   "python.languageServer": "Pylance",
-  "python.linting.pylintEnabled": false,
-  "python.linting.enabled": false,
 
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -289,18 +288,16 @@
 		"editor.wordBasedSuggestions": "off"
   },
   "python.analysis.extraPaths": [
-    "/Users/rasul/.vscode/extensions/continue.continue-0.0.412-darwin-arm64",
-    "/Users/rasul/.vscode/extensions/continue.continue-0.6.14-darwin-arm64",
-    "/Users/rasul/.vscode/extensions/continue.continue-0.6.15-darwin-arm64",
     ".venv"
   ],
   "python.autoComplete.extraPaths": [
-    "/Users/rasul/.vscode/extensions/continue.continue-0.0.412-darwin-arm64",
-    "/Users/rasul/.vscode/extensions/continue.continue-0.6.14-darwin-arm64",
-    "/Users/rasul/.vscode/extensions/continue.continue-0.6.15-darwin-arm64"
+    ".venv"
   ],
+  "python.terminal.activateEnvironment": true,
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Default Dark+",
-  "codeium.enableCodeLens": false
+"codeium.enableCodeLens": false,
+"window.commandCenter": false,
+"workbench.layoutControl.enabled": false
 }

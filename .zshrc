@@ -106,6 +106,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Bin dirs
 export PATH="${HOME}/.local/bin:$PATH"
+export PATH="${HOME}/dotfiles/bin:$PATH"
 
 # postgresql@15 from homebrew
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
@@ -128,7 +129,6 @@ export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$
 
 # https://starship.rs/guide/
 eval "$(starship init zsh)"
-
 
 # https://read.highgrowthengineer.com/p/how-i-setup-my-terminal-for-max-productivity
 HISTFILE="$HOME/.zsh_history"
