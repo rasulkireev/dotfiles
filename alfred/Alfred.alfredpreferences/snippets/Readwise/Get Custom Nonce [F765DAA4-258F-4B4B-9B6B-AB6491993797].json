@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "cs = CustomImportEmail.all_objects.filter(space=space)",
+    "uid" : "F765DAA4-258F-4B4B-9B6B-AB6491993797",
+    "name" : "Get Custom Nonce",
+    "keyword" : "gnonce"
+  }
+}

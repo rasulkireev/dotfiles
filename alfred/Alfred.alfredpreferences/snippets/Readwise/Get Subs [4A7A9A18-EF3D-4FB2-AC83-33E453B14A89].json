@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "subs = EmailSubscription.all_objects.filter(space=space)",
+    "uid" : "4A7A9A18-EF3D-4FB2-AC83-33E453B14A89",
+    "name" : "Get Subs",
+    "keyword" : "gsubs"
+  }
+}

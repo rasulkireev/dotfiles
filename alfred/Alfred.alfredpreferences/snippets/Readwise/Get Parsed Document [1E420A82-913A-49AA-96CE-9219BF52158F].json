@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "pdoc = doc.parsed_document",
+    "uid" : "1E420A82-913A-49AA-96CE-9219BF52158F",
+    "name" : "Get Parsed Document",
+    "keyword" : "pdoc"
+  }
+}

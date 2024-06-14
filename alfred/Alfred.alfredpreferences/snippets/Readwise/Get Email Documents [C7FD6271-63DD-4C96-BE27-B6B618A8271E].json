@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "emails = Document.all_objects.filter(space=space).filter_by_category(\"email\")",
+    "uid" : "C7FD6271-63DD-4C96-BE27-B6B618A8271E",
+    "name" : "Get Email Documents",
+    "keyword" : "gemails"
+  }
+}

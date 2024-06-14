@@ -5,7 +5,10 @@
   user   = rasulkireev
 [alias]
 	cm = !git add -A && git commit -m
+  gp = !git push
 [core]
 	editor = vim
 [pull]
 	rebase = false
+[push]
+	autoSetupRemote = true

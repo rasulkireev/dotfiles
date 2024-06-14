@@ -1,0 +1,1 @@
+cd ~/code/hnjobs/ && ./deployment/prod-shell.sh

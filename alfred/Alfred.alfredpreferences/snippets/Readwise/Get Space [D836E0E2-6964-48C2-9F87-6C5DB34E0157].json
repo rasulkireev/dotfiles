@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "space = ReaderSpace.objects.get(profile__user__email=\"",
+    "uid" : "D836E0E2-6964-48C2-9F87-6C5DB34E0157",
+    "name" : "Get Space",
+    "keyword" : "rspace"
+  }
+}

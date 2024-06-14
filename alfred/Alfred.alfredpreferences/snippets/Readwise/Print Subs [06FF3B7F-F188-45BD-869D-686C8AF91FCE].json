@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "for sub in subs:\n    print(f\"{sub.email} - {sub.subscribed} - {sub.created} - {sub.updated}\")\n",
+    "uid" : "06FF3B7F-F188-45BD-869D-686C8AF91FCE",
+    "name" : "Print Subs",
+    "keyword" : "psubs"
+  }
+}

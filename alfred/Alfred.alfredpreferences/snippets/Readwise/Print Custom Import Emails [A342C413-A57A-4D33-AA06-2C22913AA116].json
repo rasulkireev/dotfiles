@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "for c in cs:\n    print(f\"{c.nonce} - {c.created}\")\n",
+    "uid" : "A342C413-A57A-4D33-AA06-2C22913AA116",
+    "name" : "Print Custom Import Emails",
+    "keyword" : "nonce"
+  }
+}

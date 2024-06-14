@@ -74,6 +74,10 @@
   },
   "workbench.editor.showTabs": "single",
   "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.layoutControl.enabled": false,
 
   /**
    * Find
@@ -128,9 +132,16 @@
   // Code Specific Settings
   "[python]": {
     "editor.formatOnPaste": false,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "python.analysis.extraPaths": [
+      ".venv"
+    ],
+    "python.autoComplete.extraPaths": [
+      ".venv"
+    ],
+    "python.terminal.activateEnvironment": false,
+    "python.languageServer": "Pylance"
   },
-  "python.languageServer": "Pylance",
 
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -146,6 +157,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": false
   },
+
+  // Prettier
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
 
@@ -209,6 +222,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "go.toolsManagement.autoUpdate": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -287,17 +301,7 @@
 		// strings. This setting will prevent that.
 		"editor.wordBasedSuggestions": "off"
   },
-  "python.analysis.extraPaths": [
-    ".venv"
-  ],
-  "python.autoComplete.extraPaths": [
-    ".venv"
-  ],
-  "python.terminal.activateEnvironment": true,
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.colorTheme": "Default Dark+",
-"codeium.enableCodeLens": false,
-"window.commandCenter": false,
-"workbench.layoutControl.enabled": false
+
+  "window.commandCenter": false,
+  "codeium.enableCodeLens": false
 }
