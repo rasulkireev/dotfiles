@@ -151,3 +151,6 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_NO_STORE
 
 export BAT_THEME="base16"
+
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH

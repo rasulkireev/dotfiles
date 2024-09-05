@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "profile = Profile.og(user__email=\"",
+    "uid" : "3F1C80D1-D3A4-4BDA-A185-94FF114842AB",
+    "name" : "Get Profile",
+    "keyword" : "gprof"
+  }
+}

@@ -96,6 +96,7 @@
     "**/poetry.lock": true,
     "**/package-lock.json": true,
     "**/.venv": true,
+    "**/venv": true,
     "**/__pycache__": true,
     "storage": true,
     ".phpunit.result.cache": true,

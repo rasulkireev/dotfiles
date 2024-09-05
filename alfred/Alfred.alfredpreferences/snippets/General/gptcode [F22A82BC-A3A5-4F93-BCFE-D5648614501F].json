@@ -1,6 +1,6 @@
 {
   "alfredsnippet" : {
-    "snippet" : "- don't write comments\n- don't re-write simple variable I gave in the prompt",
+    "snippet" : "- no yapping, just code\n- don't write comments\n- don't re-write simple variable I gave in the prompt\n- don't reapet the code I gave you, just output the new stuff",
     "uid" : "F22A82BC-A3A5-4F93-BCFE-D5648614501F",
     "name" : "gptcode",
     "keyword" : "gptcode"

@@ -205,12 +205,22 @@
     "command": "editor.action.transformToLowercase",
     "when": "editorTextFocus"
   },
+  // {
+  //   "key": "cmd+backspace",
+  //   "command": "editor.action.deleteLines",
+  //   "when": "textInputFocus && !editorReadOnly"
+  // },
+  {
+    "key": "shift+cmd+k",
+    "command": "aipopup.action.modal.generate",
+    "when": "editorFocus"
+  },
 
   /**
    * Line Manipulation
    **/
   {
-    "key": "cmd+l",
+    "key": "cmd+shift+l",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus"
   },
