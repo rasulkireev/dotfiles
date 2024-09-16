@@ -29,3 +29,5 @@ alias sshconfig="code ~/.ssh/config"
 
 # edit global git configuration
 alias gitconfig="code ~/.gitconfig"
+alias wip="git add -A && git commit -m 'wip' && git push"
+# alias done='!git add -A && git commit -m "done" && git push'

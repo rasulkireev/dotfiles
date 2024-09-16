@@ -6,7 +6,6 @@
 [alias]
 	cm = !git add -A && git commit -m
   gp = !git push
-  gw = !git add -A && git commit -m "wip" && git push
 [core]
 	editor = vim
 [pull]
