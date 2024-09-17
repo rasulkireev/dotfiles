@@ -16,8 +16,6 @@ alias addalias='code ~/.zshrc'
 # Allows you to not need to restart terminal for changes to .zshrc to be applied
 alias reload='source ~/.zshrc'
 
-alias gs='git status'
-
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias starshipconfig="code ~/.config/starship.toml"
 
@@ -28,6 +26,6 @@ alias sshhome="cd ~/.ssh"
 alias sshconfig="code ~/.ssh/config"
 
 # edit global git configuration
-alias gitconfig="code ~/.gitconfig"
 alias wip="git add -A && git commit -m 'wip' && git push"
 alias mvp="git add -A && git commit -m 'mvp' && git push"
+alias master="git checkout master"
