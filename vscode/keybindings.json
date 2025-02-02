@@ -69,7 +69,7 @@
     "key": "shift+cmd+d",
     "command": "workbench.debug.action.toggleRepl",
     "when": "workbench.panel.repl.view.active"
-  }
+  },
 
   /**
    * Toggle Font Size
@@ -220,7 +220,7 @@
    * Line Manipulation
    **/
   {
-    "key": "cmd+shift+l",
+    "key": "cmd+shift+c",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus"
   },
