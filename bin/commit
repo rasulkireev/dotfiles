@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Function to check if git repository exists
+check_git_repo() {
+    if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        echo "❌ Error: Not a git repository"
+        exit 1
+    fi
+    echo "✅ Valid git repository detected"
+}
+
+# Function to check if there are any changes
+check_changes() {
+    if [ -z "$(git status --porcelain)" ]; then
+        echo "ℹ️ No changes to commit"
+        exit 0
+    fi
+    echo "✅ Changes detected"
+}
+
+# Function to generate commit message
+generate_commit_message() {
+    local diff_content=$(git diff --cached)
+
+    echo "🤔 Analyzing changes and generating commit message..."
+
+    local commit_message=$(echo -e "Changes:\n$diff_content" | \
+        llm -m anthropic/claude-3-5-sonnet-latest \
+        "Generate only a git commit message for these changes. Format:
+        - First line: Brief summary (max 50 chars)
+        - Blank line
+        - Detailed explanation of changes (wrap at 72 chars)
+        - Include any breaking changes or important notes
+        Focus on the what and why of the changes, not just the how.
+
+        IMPORTANT: Output ONLY the commit message, with no additional text before or after.")
+
+    echo "✅ Commit message generated"
+    echo "📝 Preview of commit message:"
+    echo "-------------------"
+    echo "$commit_message"
+    echo "-------------------"
+
+    echo "$commit_message"
+}
+
+# Main execution
+main() {
+    echo "🔍 Starting commit process..."
+    check_git_repo
+    check_changes
+
+    echo "➕ Adding all files to staging..."
+    git add --all
+
+    commit_message=$(generate_commit_message)
+
+    echo "🚀 Committing changes..."
+    if ! git commit -m "$commit_message"; then
+        echo "❌ Commit failed. Please fix any pre-commit hook issues and try again."
+        exit 1
+    fi
+
+    echo "✨ Commit completed successfully!"
+}
+
+main "$@"
