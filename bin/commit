@@ -23,9 +23,7 @@ generate_commit_message() {
     local diff_content=$(git diff --cached)
     local files_changed=$(git status --porcelain)
 
-    echo "🤔 Analyzing changes and generating commit message..."
-
-    local commit_message=$(echo -e "Files changed:\n$files_changed\n\nChanges:\n$diff_content" | \
+    echo -e "Files changed:\n$files_changed\n\nChanges:\n$diff_content" | \
         llm -m anthropic/claude-3-5-sonnet-latest \
         "Generate a git commit message for these changes. The message must have:
 
@@ -46,15 +44,7 @@ generate_commit_message() {
         IMPORTANT:
         - Output ONLY the commit message
         - Make sure the title is specific to these changes
-        - Focus on the what and why, not just the how")
-
-    echo "✅ Commit message generated"
-    echo "📝 Preview of commit message:"
-    echo "-------------------"
-    echo "$commit_message"
-    echo "-------------------"
-
-    echo "$commit_message"
+        - Focus on the what and why, not just the how"
 }
 
 # Main execution
@@ -66,7 +56,13 @@ main() {
     echo "➕ Adding all files to staging..."
     git add --all
 
+    echo "🤔 Generating commit message..."
     commit_message=$(generate_commit_message)
+
+    echo "📝 Preview of commit message:"
+    echo "-------------------"
+    echo "$commit_message"
+    echo "-------------------"
 
     echo "🚀 Committing changes..."
     if ! git commit -m "$commit_message"; then
