@@ -21,19 +21,32 @@ check_changes() {
 # Function to generate commit message
 generate_commit_message() {
     local diff_content=$(git diff --cached)
+    local files_changed=$(git status --porcelain)
 
     echo "🤔 Analyzing changes and generating commit message..."
 
-    local commit_message=$(echo -e "Changes:\n$diff_content" | \
+    local commit_message=$(echo -e "Files changed:\n$files_changed\n\nChanges:\n$diff_content" | \
         llm -m anthropic/claude-3-5-sonnet-latest \
-        "Generate only a git commit message for these changes. Format:
-        - First line: Brief summary (max 50 chars)
-        - Blank line
-        - Detailed explanation of changes (wrap at 72 chars)
-        - Include any breaking changes or important notes
-        Focus on the what and why of the changes, not just the how.
+        "Generate a git commit message for these changes. The message must have:
 
-        IMPORTANT: Output ONLY the commit message, with no additional text before or after.")
+        1. TITLE LINE: A specific, concise summary (max 50 chars) that clearly
+           describes the primary change or feature. This should not be generic like
+           'Update files' but rather describe the actual change like 'Add user
+           authentication to API endpoints'
+
+        2. BLANK LINE
+
+        3. DETAILED DESCRIPTION: A thorough explanation including:
+           - What changes were made
+           - Why they were necessary
+           - Any important technical details
+           - Breaking changes or important notes
+           Wrap this at 72 chars.
+
+        IMPORTANT:
+        - Output ONLY the commit message
+        - Make sure the title is specific to these changes
+        - Focus on the what and why, not just the how")
 
     echo "✅ Commit message generated"
     echo "📝 Preview of commit message:"
