@@ -208,3 +208,6 @@ if [ -z "${_mise_cmd_not_found:-}" ]; then
         fi
     }
 fi
+
+# For OpenHands
+export WORKSPACE_BASE=~/code
