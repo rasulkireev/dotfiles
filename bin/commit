@@ -3,6 +3,7 @@
 # Function to check if git repository exists
 check_git_repo() {
     if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        echo "Error: Not a git repository."
         exit 1
     fi
 }
@@ -10,6 +11,7 @@ check_git_repo() {
 # Function to check if there are any changes
 check_changes() {
     if [ -z "$(git status --porcelain)" ]; then
+        echo "No changes to commit."
         exit 0
     fi
 }
@@ -17,30 +19,37 @@ check_changes() {
 # Function to generate commit message
 generate_commit_message() {
     local diff_content=$(git diff --cached)
-    local files_changed=$(git status --porcelain)
+    local files_changed_raw=$(git status --porcelain)
 
-    echo -e "Files changed:\n$files_changed\n\nChanges:\n$diff_content" | \
+    # Extract file names
+    local files_changed=$(echo "$files_changed_raw" | awk '{print $2}')
+
+    echo -e "Files changed:\n$files_changed_raw\n\nChanges:\n$diff_content" | \
         llm -m gemini-2.0-flash \
-        "Generate a git commit message for these changes. The message must have:
+        "Generate a git commit message for these changes, following the conventional commit format. The message must have:
 
-        1. TITLE LINE: A specific, concise summary (max 50 chars) that clearly
-           describes the primary change or feature. This should not be generic like
-           'Update files' but rather describe the actual change like 'Add user
-           authentication to API endpoints'
+        1. TYPE(optional scope): Short description
+           - Type must be one of: feat, fix, chore, refactor, docs, style, test, perf, ci, build, revert.
+           - Scope (optional) should be a single lowercase word indicating the affected area.
+           - Short description should be concise (max 50 chars), start with lowercase, and be in present tense.
 
         2. BLANK LINE
 
-        3. DETAILED DESCRIPTION: A thorough explanation including:
-           - What changes were made
-           - Why they were necessary
-           - Any important technical details
-           - Breaking changes or important notes
-           Wrap this at 72 chars.
+        3. Optional detailed body:
+           - Explain the changes made.
+           - Explain why these changes were necessary.
+           - Include important technical details.
+           - Mention any breaking changes or important notes.
+           - Use bullet points for clarity.
+           - Wrap lines at 72 characters.
+
+        4. Optional footer:
+           - Include metadata like issue references (e.g., Fixes #123).
 
         IMPORTANT:
-        - Output ONLY the commit message
-        - Make sure the title is specific to these changes
-        - Focus on the what and why, not just the how"
+        - Output ONLY the commit message.
+        - Ensure the type and short description are specific to these changes.
+        - Focus on the 'what' and 'why', not just the 'how'."
 }
 
 # Main execution
@@ -49,7 +58,15 @@ main() {
     check_changes
     git add --all
     commit_message=$(generate_commit_message)
-    git commit -m "$commit_message"
+
+    if [ -n "$commit_message" ]; then
+        echo "Generated commit message:"
+        echo "$commit_message"
+        git commit -m "$commit_message"
+    else
+        echo "Failed to generate commit message."
+        exit 1
+    fi
 }
 
 main "$@"
