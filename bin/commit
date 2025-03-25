@@ -38,7 +38,7 @@ generate_commit_message() {
            Wrap this at 72 chars.
 
         IMPORTANT:
-        - Output ONLY the commit message
+        - Output ONLY the commit message! Do not include any other text.
         - Make sure the title is specific to these changes
         - Focus on the what and why, not just the how"
 }
